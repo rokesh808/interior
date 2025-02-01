@@ -24,10 +24,10 @@
         <main class="max-sm:border-b-[1px] mx-[auto]  max-sm:border-[#000000]">
             <menu class=" max-w-full  py-[29px] flex     flex-row sm:justify-around justify-between items-center ">
                 <div class="sm:flex sm:gap-[30px] lg:gap-[50px] max-sm:hidden max-sm:fixed max-sm:top-103 max-sm:z-10 flex max-sm:flex-col max-sm:items-center max-sm:gap-[30px] max-sm:w-1/2">
-                   <a href="#" class="block about">ABOUT</a>
-                  <a href="#" class="block lookbook">LOOKBOOK</a>
+                   <a href="#" class="block" id="about">ABOUT</a>
+                  <a href="#" class="block" id="lookbook">LOOKBOOK</a>
                 </div>
-                <button class="sm:hidden pl-[10px] btn">
+                <button class="sm:hidden pl-[10px]" id="btn">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" class="w-8 h-8">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
@@ -45,7 +45,7 @@
              
          </menu>
        
-        <nav class="navbar text-base border-b-[1px] border-[#000000] max-sm:hidden flex justify-center max-sm:justify-start max-sm:items-center max-sm:py-[40px] sm:gap-[30px] md:gap-[50px] lg:gap-[70px] max-sm:flex-col max-sm:fixed max-sm:top-0 max-sm:left-0 max-sm:gap-[30px] max-sm:bg-white max-sm:w-1/2 max-sm:h-screen">
+        <nav id="navbar" class=" text-base border-b-[1px] border-[#000000] max-sm:hidden flex justify-center max-sm:justify-start max-sm:items-center max-sm:py-[40px] sm:gap-[30px] md:gap-[50px] lg:gap-[70px] max-sm:flex-col max-sm:fixed max-sm:top-0 max-sm:left-0 max-sm:gap-[30px] max-sm:bg-white max-sm:w-1/2 max-sm:h-screen">
             <a href="" class="hover:border-b-[3px]   hover:border-[#000000]  hover:text-pink-300 pb-2">NEW IN</a>
             <a href="" class="hover:border-b-[3px]   border-[#000000] hover:text-pink-300 pb-2">FURNITURES</a>
             <a href="" class="hover:border-b-[3px]  border-[#000000] hover:text-pink-300 pb-2">LIGHTS</a>
@@ -246,10 +246,10 @@
     </footer>
     
      <script>
-        let navbar=document.getElementByClassName('navbar')
-        let about=document.getElementByClassName('about')
-        let lookbook=document.getElementByClassName('lookbook')
-        let btn=document.getElementByClassName('btn')
+        let navbar=document.getElementById('navbar')
+        let about=document.getElementById('about')
+        let lookbook=document.getElementById('lookbook')
+        let btn=document.getElementById('btn')
          navbar.addEventListener('onclick',()=>{
             navbar.style.display='block'
          })
